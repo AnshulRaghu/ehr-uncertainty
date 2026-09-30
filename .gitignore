@@ -21,9 +21,9 @@ data/processed/
 # IDE
 .vscode/
 
-# Python environment
+# Python package metadata
 *.egg-info/
 
 # Temporary files
 *.tmp
-*.log
+*.loganaconda_projects/
