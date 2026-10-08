@@ -4,6 +4,8 @@
 
 This project investigates machine learning approaches for handling missing data in Electronic Health Record (EHR) datasets while accounting for uncertainty associated with missing or imputed information.
 
+Essentially, does a model's predictive uncertainty increase when important information is missing from an EHR record, and can that uncertainty help identify predictions that are less reliable?
+
 The project will explore whether incorporating uncertainty into the data processing and predictive modeling pipeline can provide more reliable predictions than conventional approaches that treat imputed values as certain observations.
 
 ## Research Problem
