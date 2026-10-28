@@ -1,19 +1,30 @@
-# Dataset
+## Dataset
 
-## Diabetes 130-US Hospitals for Years 1999-2008
+This project uses the UCI Diabetes 130-US Hospitals dataset, which contains
+hospital encounter data for patients with diabetes.
 
-This project uses the **Diabetes 130-US Hospitals for Years 1999-2008** dataset from the UCI Machine Learning Repository.
+The prediction target is `readmitted`, with three classes:
 
-* **UCI Dataset:** Diabetes 130-US Hospitals for Years 1999-2008
-* **UCI Dataset ID:** 296
-* **Source:** UCI Machine Learning Repository
-* **Original data:** 101,766 hospital encounters
-* **Features:** 47
-* **Target:** `readmitted`
+- `NO`
+- `>30`
+- `<30`
 
-The dataset contains clinical, demographic, administrative, medication, and hospital encounter information for patients with diabetes.
+The dataset contains 101,766 encounters and 47 input features.
 
-## Data Acquisition
+The raw dataset is not committed to this repository. It should be obtained
+through the UCI repository using the `ucimlrepo` Python package and stored
+locally under `data/raw/`.
+
+The dataset is used to investigate whether predictive uncertainty increases
+under realistic EHR missingness and whether uncertainty can identify less
+reliable predictions.
+
+### Dataset acquisition
+
+Install dependencies first:
+
+```bash
+pip install -r requirements.txt
 
 The dataset can be obtained programmatically using the `ucimlrepo` Python package:
 
