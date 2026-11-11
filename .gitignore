@@ -27,3 +27,7 @@ data/processed/
 # Temporary files
 *.tmp
 *.loganaconda_projects/
+
+# Local Anaconda project metadata
+anaconda_projects/
+.DS_Store
